@@ -1,15 +1,17 @@
 {
-  "name": "numberfixwidth",
-  "version": "1.0.2",
+  "name": "fixwidth",
+  "version": "1.0.0",
   "description": "fixWidth(2017,2) //=> '17'  fixWidth(7,2) //=> '07'",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "build":"browserify -r ./index.js:fixwidth -o ./dist/fixwidth.js"
   },
   "keywords": [
+    "string",
     "number",
     "fixwidth"
   ],
-  "author": "shanyang",
+  "author": "ishanyang",
   "license": "MIT"
 }

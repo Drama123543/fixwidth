@@ -1,6 +1,5 @@
-function numberfixwidth (number, digits) {
-  if (typeof number !== 'number') { throw new Error('not a number: ' + number); }
-  var s = number.toString();
+function fixwidth (str, digits) {
+  var s = str.toString();
   var s_len = s.length;
   if (s_len > digits) {
     return s.substr(s_len - digits, s_len);
@@ -13,4 +12,4 @@ function numberfixwidth (number, digits) {
   return s.join('');
 };
 
-module.exports = numberfixwidth;
+module.exports = fixwidth;
